@@ -57,8 +57,8 @@ async def log_command(ctx, url: str):
                             
                         embed = discord.Embed(
                             title=f"🔍 Log Sorgu Sonucu: {url}",
-                            description="Sonuçlar aşağıda dosya olarak indirilebilir.",
-                            color=discord.Color.red()
+                            description="Sonuçlar aşağıda dosya olarak indirilebilir seçtiğinz domainde log checklendi.",
+                            color=discord.Color.green()
                         )
                         embed.set_footer(text="BY DARKCC")
                         
@@ -69,7 +69,7 @@ async def log_command(ctx, url: str):
                     else:
                         # Kısa içerikse doğrudan mesaj olarak gönder
                         embed = discord.Embed(
-                            title=f"🔍 Log Sorgu Sonucu: {url}",
+                            title=f"🔍 L0g Sorgu Sonucun: {url}",
                             description=f"```\n{final_result[:1900]}\n```", 
                             color=discord.Color.red()
                         )
